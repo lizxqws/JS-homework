@@ -17,7 +17,7 @@ console.log("Зниженне здоров'я гравця: " + playerHealthDecr
 console.log("Зниженна енергія гравця: " + playerEnergyDecrease);
 // task 4
 const storePurchaseAmount = 80800;
-const storeDiscount = storePurchaseAmount - (storePurchaseAmount * 10) / 100;
+const storeDiscount = storePurchaseAmount - ((storePurchaseAmount * 10) / 100);
 console.log("Сума у корзині: " + storePurchaseAmount + " гривень");
 console.log("Сума у корзині зі знижкою: " + storeDiscount + " гривень");
 // task 5
@@ -34,6 +34,6 @@ const rootOfNumber = 25;
 console.log("Корінь числа: " + Math.sqrt(rootOfNumber));
 // task 9
 const firstIntegerNumber = 432;
-const secondStringNumber = "313";
+const secondStringNumber = "313asdasd";
 console.log("Ціле(рядкове) число: " + Number.parseInt(secondStringNumber));
 console.log("Рядкове(ціле) число: " + firstIntegerNumber.toString());
