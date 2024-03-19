@@ -7,9 +7,9 @@ if (text1 && text2) {
   console.log(alert("Не всі поля заповнені"));
 }
 // task 2
-const value1 = prompt("Введіть значення 1");
-const value2 = prompt("Введіть значення 2");
-const sum = value1.length + value2.length;
+const value1 = Number(prompt("Введіть значення 1"));
+const value2 = Number(prompt("Введіть значення 2"));
+const sum = value1 + value2;
 if (sum > 10) {
   console.log(alert("Сума більша за 10"));
 } else {
@@ -24,10 +24,12 @@ if (textValue.includes("JavaScript")) {
 }
 // task 4
 const textValue2 = prompt("Введіть текстове значення");
-if (textValue2 >= 10 && textValue2 < 20) {
+if (Number(textValue2) >= 10 && Number(textValue2) < 20) {
   console.log(alert("Число входить в діапазон від 10 до 20"));
 } else {
-  console.log(alert("Число не входить в діапазон від 10 до 20"));
+  console.log(
+    alert("Число не входить в діапазон від 10 до 20 або це не число")
+  );
 }
 // task 5
 const nickName = prompt("Введіть ім'я");
