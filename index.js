@@ -89,7 +89,7 @@ switch (color) {
   case "Жовтий":
     console.log = alert("Чекати");
     break;
-  case "Червоний":
+  case "Зелений":
     console.log = alert("Йти");
     break;
   default:
@@ -110,7 +110,11 @@ switch (arithmetic) {
     console.log = alert(number1 * number2);
     break;
   case "/":
-    console.log = alert(number1 / number2);
+    if (number2 == 0) {
+      alert("На нуль ділити не можна");
+    } else {
+      console.log = alert(number1 / number2);
+    }
     break;
   default:
     console.log = alert("Ви не вписали потрібне значення");
