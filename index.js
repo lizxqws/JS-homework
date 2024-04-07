@@ -33,7 +33,7 @@ for (let i = 0; i < str.length; i += 1) {
 
 // task 6
 numbers = [1, 13, 123, 14, 34, 53, 785, 324, 3, 10];
-max = 0;
+let max = numbers[0];
 for (let i = 0; i < numbers.length; i += 1) {
   if (numbers[i] > max) {
     max = numbers[i];
