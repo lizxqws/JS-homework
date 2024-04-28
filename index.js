@@ -14,9 +14,9 @@ logItems(clients);
 const calculateEngravingPrice = function (message, pricePerWord) {
   const words = message.split(" ");
   const sum = words.length * Number(pricePerWord);
-  console.log(sum);
+  return sum;
 };
-calculateEngravingPrice("Hello World and people!", 100);
+console.log(calculateEngravingPrice("Hello World and people!", 100));
 
 // task 3
 
@@ -28,10 +28,10 @@ const findLongestWord = function (text) {
       longestWord = words[i];
     }
   }
-  console.log(longestWord);
+  return longestWord;
 };
 
-findLongestWord("Hello! My name is Oleksandra");
+console.log(findLongestWord("Hello! My name is Oleksandra"));
 
 // task 4
 
@@ -39,9 +39,12 @@ const formatString = function (message) {
   if (message.length > 40) {
     message = message.slice(0, 40) + "...";
   }
-  console.log(message);
+  return message;
 };
-formatString("Hello! Today I want to tell you about some incredible places");
+
+console.log(
+  formatString("Hello! Today I want to tell you about some incredible places")
+);
 
 // task 5
 
