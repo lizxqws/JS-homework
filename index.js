@@ -8,10 +8,9 @@ const bankAccount = {
     this.balance += amount;
   },
   withdraw(amount) {
-    if (this.balance > 0) {
-      return (this.balance -= amount);
+    if (this.balance > amount) {
+      this.balance -= amount;
     }
-    return false;
   },
 };
 
