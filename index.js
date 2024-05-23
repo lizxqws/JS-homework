@@ -8,7 +8,10 @@ const bankAccount = {
     this.balance += amount;
   },
   withdraw(amount) {
-    this.balance -= amount;
+    if (this.balance > 0) {
+      return (this.balance -= amount);
+    }
+    return false;
   },
 };
 
@@ -29,10 +32,7 @@ const weather = {
   humidity: "",
   windSpeed: "",
   isTemperatureNegative() {
-    if (this.temperature <= 0) {
-      return true;
-    }
-    return false;
+    return this.temperature <= 0;
   },
 };
 
@@ -47,13 +47,10 @@ if (weather.isTemperatureNegative()) {
 
 const user = {
   userName: "",
-  email: "",
-  password: 123456,
+  email: "1asd@gmail.com",
+  password: "123456",
   isLoginCorrect(email, password) {
-    if (email == this.email && password == this.password) {
-      return true;
-    }
-    return false;
+    return email == this.email && password == this.password;
   },
 };
 
@@ -72,10 +69,7 @@ const movie = {
   year: 2020,
   rating: 10,
   isMoviePopular() {
-    if (this.rating > 8) {
-      return true;
-    }
-    return false;
+    return this.rating > 8;
   },
 };
 
