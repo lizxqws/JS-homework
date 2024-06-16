@@ -47,16 +47,17 @@ const findBestEmployee = function (employees) {
   return bestEmployeeName;
 };
 
-console.log(
-  findBestEmployee({
-    ann: 29,
-    david: 35,
-    helen: 1,
-    lorence: 99,
-  })
-);
+const employees = {
+  ann: 29,
+  david: 35,
+  helen: 1,
+  lorence: 99,
+};
 
-const { ann, david, helen, lorence } = findBestEmployee;
+console.log(findBestEmployee(employees));
+
+const { ann, david, helen, lorence } = employees;
+// console.log(ann, david, helen, lorence);
 
 // task 4
 
@@ -71,15 +72,16 @@ const countTotalSalary = function (employees) {
 
 console.log(countTotalSalary({})); // 0
 
-console.log(
-  countTotalSalary({
-    mango: 100,
-    poly: 150,
-    alfred: 80,
-  })
-); // 330
+const totalSalary = {
+  mango: 100,
+  poly: 150,
+  alfred: 80,
+};
 
-const { mango, poly, alfred } = countTotalSalary;
+console.log(countTotalSalary(totalSalary));
+
+const { mango, poly, alfred } = totalSalary;
+// console.log(mango, poly, alfred);
 
 // task 5
 
