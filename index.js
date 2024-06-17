@@ -112,6 +112,8 @@ const getUsersWithGender = (users, gender) => {
   return filterdUsersNames;
 };
 
+console.log(getUsersWithGender(users, "male")); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
+
 // task 4
 
 const getInactiveUsers = users => users.filter(user => !user.isActive);
