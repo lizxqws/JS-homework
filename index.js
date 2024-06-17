@@ -100,18 +100,23 @@ const getUsersWithEyeColor = (users, color) =>
 console.log(getUsersWithEyeColor(users, "blue")); // [объект Moore Hensley, объект Sharlene Bush, объект Carey Barr]
 
 // task 3
+const getUsersWithGender = (users, gender) => {
+  const filterdUsersNames = [];
 
-const getUsersWithGender = (users, gender) =>
-  users.filter(user => user.gender === gender).map(user => user.name);
+  users.map(user => {
+    if (user.gender == gender) {
+      filterdUsersNames.push(user.name);
+    }
+  });
 
-console.log(getUsersWithGender(users, "male")); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
+  return filterdUsersNames;
+};
 
 // task 4
 
-const getInactiveUsers = users =>
-  users.filter(user => !user.isActive).map(user => user.name);
+const getInactiveUsers = users => users.filter(user => !user.isActive);
 
-console.log(getInactiveUsers(users)); // [Moore Hensley, Ross Vazquez, Blackburn Dotson]
+console.log(getInactiveUsers(users)); // [об'єкт Moore Hensley, об'єкт Ross Vazquez, об'єкт Blackburn Dotson]
 
 // task 5
 
@@ -125,8 +130,8 @@ console.log(getUserWithEmail(users, "elmahead@omatom.com")); // {объект п
 // task 6
 
 const getUsersWithAge = (users, min, max) =>
-  users.filter(user => user.age > min && user.age < max).map(user => user.name);
+  users.filter(user => user.age > min && user.age < max);
 
-console.log(getUsersWithAge(users, 20, 30)); //  [Ross Vazquez, Elma Head, Carey Barr]
+console.log(getUsersWithAge(users, 20, 30)); // [об'єкт Ross Vazquez, об'єкт Elma Head, об'єкт Carey Barr]
 
-console.log(getUsersWithAge(users, 30, 40)); // [Moore Hensley, Sharlene Bush, Blackburn Dotson, Sheree Anthony]
+console.log(getUsersWithAge(users, 30, 40)); // [об'єкт Moore Hensley, об'єкт Sharlene Bush, об'єкт Blackburn Dotson, об'єкт Sheree Anthony]
