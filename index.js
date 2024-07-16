@@ -1,32 +1,23 @@
 // task 1
 
-class Account {
-  constructor({ login, email }) {
-    this.login = login;
-    this.email = email;
-  }
-
-  getInfo() {
-    return console.log(`Login: ${this.login}, Email: ${this.email}`);
-  }
+function Account(login, email) {
+  this.login = login;
+  this.email = email;
 }
+
+Account.prototype.getInfo = function () {
+  console.log(`Login: ${this.login}, Email: ${this.email}`);
+};
 
 console.log(Account.prototype.getInfo); // function
 
-const mango1 = new Account({
-  login: "Mangozedog",
-  email: "mango@dog.woof",
-});
+const mango1 = new Account("Mangozedog", "mango@dog.woof");
 
 mango1.getInfo(); // Login: Mangozedog, Email: mango@dog.woof
 
-const poly1 = new Account({
-  login: "Poly",
-  email: "poly@mail.com",
-});
+const poly1 = new Account("Poly", "poly@mail.com");
 
 poly1.getInfo(); // Login: Poly, Email: poly@mail.com
-
 // task 2
 
 class User {
