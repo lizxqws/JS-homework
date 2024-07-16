@@ -158,9 +158,12 @@ class Car {
    * isOn - заведений автомобіль, значення true або false. Спочатку false
    * distance - загальний кілометраж, спочатку 0
    */
+
+  #price;
+
   constructor({ speed, price, maxSpeed, isOn, distance }) {
     this.speed = 0;
-    this.price = price;
+    this.#price = price;
     this.maxSpeed = maxSpeed;
     this.isOn = false;
     this.distance = 0;
@@ -172,11 +175,11 @@ class Car {
    */
 
   get price() {
-    return this._price;
+    return this.#price;
   }
 
   set price(newPrice) {
-    this._price = newPrice;
+    this.#price = newPrice;
   }
 
   /*
