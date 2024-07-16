@@ -135,7 +135,7 @@ const getSortedUniqueSkills = users => {
         uniqueSkill => skill == uniqueSkill
       );
 
-      if (isSkillUnique == undefined) {
+      if (!isSkillUnique) {
         allUniqueSkills.push(skill);
       }
     });
@@ -143,7 +143,7 @@ const getSortedUniqueSkills = users => {
     return allUniqueSkills;
   }, []);
 
-  return uniqueSkills.sort();
+  return uniqueSkills.sort((a, b) => a.localeCompare(b));
 };
 
 console.log(getSortedUniqueSkills(users));
