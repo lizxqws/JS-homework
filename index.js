@@ -1,11 +1,14 @@
-// const hello1 = name1 => console.log(`Привіт, ${name1}`);
-// hello1("Катря");
+import menuTempletes from "./templates/list.hbs";
+console.log(menuTempletes);
 
-const sum = (n, m) => {
-  if (n === NaN || n === undefined) {
-    console.log("Ви ввели не число");
-  } else {
-    return n + m;
-  }
+const obj = {
+  name: "Австралія1111",
+  capital: "Канберра",
+  currency: "Австралійский доллар (AUD)",
+  language: "Англійска",
+  population: 24970200,
+  flag: "https://wikiway.com/upload/iblock/742/800pxFlagofAustraliasvg.png",
+  infected: false,
 };
-console.log(sum("w", 2));
+
+document.getElementById("app").innerHTML = menuTempletes(obj);
