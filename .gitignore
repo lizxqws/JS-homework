@@ -2,3 +2,7 @@
 /.parcel-cache
 /dist
 /node_modules
+/folders/dist
+/my-project/node_modules
+/my-project/.cache
+/my-project/dist
