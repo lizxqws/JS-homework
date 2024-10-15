@@ -1,0 +1,22 @@
+.library {
+  display: flex;
+}
+
+.book {
+  width: 400px;
+  background-color: rgba(154, 194, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  margin-right: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.book-details {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.buttons {
+  margin-top: 10px;
+}
