@@ -1,0 +1,15 @@
+<article>
+    <h2>{{title}}</h2>
+    <h3>Director: {{director}}</h3>
+    <p>Duration: {{duration_minutes}} min</p>
+    <p>Released: {{year_released}}</p>
+    <p>{{#if is_animated}}This movie is animated.
+        {{else}}This movie is not animated.
+    {{/if}}
+    </p>
+    <p>{{#if won_oscar}}This movie won an oscar.
+        {{else}}This movie did not win an oscar.
+    {{/if}}
+    </p>
+    <p>Language: {{language}}</p>
+</article>

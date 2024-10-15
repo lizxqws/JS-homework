@@ -1,0 +1,8 @@
+<article class="card">
+    {{#each movies}}
+    <h2>{{this.title}}</h2>
+    <h3>Director: {{this.director}}</h3>
+    <p>Duration: {{this.duration_minutes}} min</p>
+    <p>Released: {{this.year_released}}</p>
+    {{/each}}
+</article>
