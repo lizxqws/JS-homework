@@ -1,0 +1,14 @@
+.box {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(160, 235, 255);
+}
+
+.start {
+  width: 200px;
+  margin-top: 30px;
+}
