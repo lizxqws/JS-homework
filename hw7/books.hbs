@@ -1,0 +1,11 @@
+{{#each books}}
+<article class="book">    
+    <h2 class="book-title">{{this.title}}</h2>
+    <h3 class="book-author">Author: {{this.author}}</h3>
+    <ul class="book-details">
+        <li class="book-publisher">Publisher: {{this.publisher}} </li>
+        <li class="book-relesedYear">Released: {{this.year_released}} year</li>
+        <li class="book-pages">Pages: {{this.how_many_pages}} pages</li>
+    </ul>
+ </article>
+{{/each}}
